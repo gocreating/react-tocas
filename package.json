@@ -1,0 +1,24 @@
+{
+  "name": "react-tocas",
+  "version": "0.1.0",
+  "description": "Tocas UI 2 components built with react",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocreating/react-tocas.git"
+  },
+  "keywords": [
+    "react",
+    "tocas",
+    "ui"
+  ],
+  "author": "Weng, Chih-Ping <gocreating@gmail.com> (http://github.com/gocreating)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gocreating/react-tocas/issues"
+  },
+  "homepage": "https://github.com/gocreating/react-tocas#readme"
+}
