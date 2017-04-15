@@ -14,7 +14,7 @@ var files = {
 
 // clean build files
 gulp.task('clean', function(done) {
-  rimraf.sync('./dist');
+  rimraf.sync('./lib');
   done();
 });
 
@@ -22,7 +22,7 @@ gulp.task('clean', function(done) {
 gulp.task('build', function() {
   return gulp
     .src(files.src)
-    .pipe(changed('./dist'))
+    .pipe(changed('./lib'))
     .pipe(sourcemaps.init())
       .pipe(babel({
         presets: [
@@ -41,7 +41,7 @@ gulp.task('build', function() {
         return path.resolve(__dirname, 'src');
       },
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./lib'));
 });
 
 // watching source files

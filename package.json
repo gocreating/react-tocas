@@ -2,7 +2,7 @@
   "name": "react-tocas",
   "version": "0.1.0",
   "description": "Tocas UI 2 components built with react",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint --config=./.eslintrc.json ./src",
     "test": "npm run lint",

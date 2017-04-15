@@ -2,7 +2,7 @@
 node_modules
 
 # Build
-/dist
+/lib
 
 # Others
 .DS_Store
