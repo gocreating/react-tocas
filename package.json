@@ -41,6 +41,10 @@
     "gulp-changed": "^2.0.0",
     "gulp-notify": "^3.0.0",
     "gulp-sourcemaps": "^2.6.0",
+    "react": "^15.5.4",
     "rimraf": "^2.6.1"
   },
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
 }
