@@ -6,7 +6,7 @@ let CardNavigation = ({ title, cards }) => (
   <Grid>
     <Row column={1}>
       <Column>
-        <header className="ts fluid horizontally fitted padded heading slate">
+        <header className="ts fluid horizontally padded heading slate">
           <div className="ts narrow container">
             <h1 className="ts left aligned header">
               {title}
