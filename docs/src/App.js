@@ -14,6 +14,11 @@ let App = () => (
         component={require('./pages/HomePage').default}
       />
       <Route
+        exact
+        path="/collections"
+        component={require('./pages/collections/NavigationPage').default}
+      />
+      <Route
         component={require('./pages/NotFoundPage').default}
       />
     </Switch>
