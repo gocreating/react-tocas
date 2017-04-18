@@ -9,6 +9,10 @@ const tocasProps = [
   'primary', 'info', 'warning', 'positive', 'negative', 'inverted',
   // sizes
   'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
+  // directions
+  'left', 'right',
+  // alignment
+  'floated', 'aligned',
 ];
 
 class Box extends Component {
