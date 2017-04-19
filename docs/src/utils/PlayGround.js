@@ -23,11 +23,11 @@ class PlayGround extends Component {
 
     return (
       <div className="playground">
-        <div className="ts borderless flatted fitted clearing segment">
+        <div className="ts borderless flatted horizontally fitted clearing segment">
           <h3 className="ts left floated header">{title}</h3>
           {!notImplemented && (
             <button
-              className="ts small right floated labeled icon button"
+              className="ts mini right floated labeled icon button"
               onClick={this.onBtnCodeClick}
             >
               <i className="code icon"></i>
