@@ -1,4 +1,6 @@
 export Box from './Box';
+export Button from './Button';
+export Buttons from './Buttons';
 export Container from './Container';
 export Header from './Header';
 export Slate from './Slate';
@@ -7,4 +9,3 @@ export Segments from './Segments';
 export Grid from './Grid';
 export Row from './Row';
 export Column from './Column';
-export Button from './Button';

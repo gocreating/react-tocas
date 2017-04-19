@@ -14,8 +14,8 @@ const tocasProps = [
   'left', 'center', 'right',
   // alignment
   'floated', 'aligned', 'attached',
-  // disabled
-  'disabled',
+  // active/disabled
+  'active', 'disabled',
   // others
   'icon',
 ];
