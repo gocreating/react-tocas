@@ -1,6 +1,7 @@
 export Box from './Box';
 export Container from './Container';
 export Header from './Header';
+export Slate from './Slate';
 export Segment from './Segment';
 export Segments from './Segments';
 export Grid from './Grid';

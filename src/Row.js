@@ -13,11 +13,11 @@ class Row extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'row',
       column ? `${Sizes[column - 1]} column` : null,
       {
         doubling,
       },
+      'row',
       className,
     );
 

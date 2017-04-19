@@ -16,7 +16,6 @@ class Header extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'header',
       {
         sub,
         dividing,
@@ -24,6 +23,7 @@ class Header extends Component {
         thinner,
         bolder,
       },
+      'header',
       className
     );
 

@@ -30,6 +30,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/slate"
+        component={require('./pages/elements/SlatePage').default}
+      />
+      <Route
+        exact
         path="/elements/segment"
         component={require('./pages/elements/SegmentPage').default}
       />

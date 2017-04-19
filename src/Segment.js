@@ -8,9 +8,6 @@ class Segment extends Component {
     let {
       raised,
       loading,
-      very,
-      padded,
-      fitted,
       compact,
       clearing,
       fluid,
@@ -21,13 +18,9 @@ class Segment extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'segment',
       {
         raised,
         loading,
-        very,
-        padded,
-        fitted,
         compact,
         clearing,
         fluid,
@@ -35,6 +28,7 @@ class Segment extends Component {
         borderless,
         basic,
       },
+      'segment',
       className
     );
 
@@ -53,9 +47,6 @@ Segment.displayName = 'Segment';
 Segment.propTypes = {
   raised: PropTypes.bool,
   loading: PropTypes.bool,
-  very: PropTypes.bool,
-  padded: PropTypes.bool,
-  fitted: PropTypes.bool,
   compact: PropTypes.bool,
   clearing: PropTypes.bool,
   fluid: PropTypes.bool,
