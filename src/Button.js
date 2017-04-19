@@ -21,4 +21,6 @@ class Button extends Component {
   }
 }
 
+Button.displayName = 'Button';
+
 export default Button;
