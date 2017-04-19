@@ -31,7 +31,7 @@ class PlayGround extends Component {
               onClick={this.onBtnCodeClick}
             >
               <i className="code icon"></i>
-              程式碼
+              Code
             </button>
           )}
         </div>
