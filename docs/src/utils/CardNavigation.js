@@ -17,7 +17,7 @@ let CardNavigation = ({ title, cards }) => (
     </Row>
     <Row column={1}>
       <Column>
-        <div className="ts four cards">
+        <div className="ts doubling four cards">
           {cards.map(({ to, title, meta, description, symbol }) => (
             <Link key={to} to={to} className="ts card">
               <div className="content">

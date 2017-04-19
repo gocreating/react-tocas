@@ -9,8 +9,10 @@ let PageLayout = ({ children }) => (
         <Navigation />
       </Column>
     </Row>
-    <div className="ts container">
-      {children}
+    <div className="ts fluid container">
+      <div className="ts container">
+        {children}
+      </div>
     </div>
   </Grid>
 );
