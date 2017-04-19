@@ -41,13 +41,13 @@ class PlayGround extends Component {
           </div>
         )}
         {!notImplemented && !isCodeExpanded && (
-          <div className="ts segment fitted preview">
+          <div className="ts borderless flatted clearing segment fitted preview">
             {component}
           </div>
         )}
         {!notImplemented && isCodeExpanded && (
           <div className="ts segments">
-            <div className="ts segment preview">
+            <div className="ts clearing segment preview">
               {component}
             </div>
             <div className="ts secondary fitted segment">
