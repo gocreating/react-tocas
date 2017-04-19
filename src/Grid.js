@@ -37,6 +37,8 @@ class Grid extends Component {
   }
 }
 
+Grid.displayName = 'Grid';
+
 Grid.propTypes = {
   column: PropTypes.number,
   relaxed: PropTypes.bool,

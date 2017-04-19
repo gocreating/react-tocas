@@ -45,6 +45,8 @@ class Box extends Component {
   }
 }
 
+Box.displayName = 'Box';
+
 Box.defaultProps = {
   wrapper: 'div',
 };

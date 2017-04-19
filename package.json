@@ -1,6 +1,6 @@
 {
   "name": "react-tocas",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tocas UI 2 components built with react",
   "main": "lib/index.js",
   "scripts": {
