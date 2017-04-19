@@ -22,6 +22,12 @@ let NavigationPage = () => (
         description: 'To separate text content',
         symbol: <i className="icon header" />,
       }, {
+        to: '/elements/slate',
+        title: 'Slate',
+        meta: '<Slate />',
+        description: 'Multi-functional block like header container, placeholder or uploading area',
+        symbol: <i className="icon square" />,
+      }, {
         to: '/elements/segment',
         title: 'Segment',
         meta: '<Segment />, <Segments />',
