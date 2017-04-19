@@ -5,14 +5,19 @@ import classNames from 'classnames';
 const tocasProps = [
   // main
   'ts',
-  // colors
+  // semantics
   'primary', 'info', 'warning', 'positive', 'negative', 'inverted',
+  // annoucements
+  'secondary', 'tertiary',
   // sizes
   'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
   // directions
-  'left', 'right',
+  'left', 'center', 'right',
+  'vertically', 'horizontally',
   // alignment
   'floated', 'aligned',
+  // disabled
+  'disabled',
 ];
 
 class Box extends Component {
