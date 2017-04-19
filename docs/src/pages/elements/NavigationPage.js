@@ -10,6 +10,12 @@ let NavigationPage = () => (
     <CardList
       title="Elements"
       cards={[{
+        to: '/elements/button',
+        title: 'Button',
+        meta: '<Button />, <Buttons />',
+        description: 'Clickable and feedback related component',
+        symbol: <i className="icon hand pointer" />,
+      }, {
         to: '/elements/container',
         title: 'Container',
         meta: '<Container />',
