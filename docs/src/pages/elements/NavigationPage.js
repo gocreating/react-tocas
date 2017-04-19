@@ -15,6 +15,12 @@ let NavigationPage = () => (
         meta: '<Container />',
         description: 'Centralize text content especially in high display resolution',
         symbol: <i className="icon resize horizontal" />,
+      }, {
+        to: '/elements/segment',
+        title: 'Segment',
+        meta: '<Segment />, <Segments />',
+        description: 'To wrap text',
+        symbol: <i className="icon content" />,
       }]}
     />
   </DemoPageLayout>
