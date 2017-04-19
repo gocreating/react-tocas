@@ -33,6 +33,7 @@ class Box extends Component {
       extra,
       padded,
       fitted,
+      compact,
       ...rest
     } = this.props;
     let cx = classNames(
@@ -44,6 +45,7 @@ class Box extends Component {
         extra,
         padded,
         fitted,
+        compact,
       },
       ...tocasProps.map(tocasProp => {
         let cx = {

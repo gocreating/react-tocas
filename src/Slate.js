@@ -13,7 +13,6 @@ class Slate extends Component {
       fluid,
       insetted,
       clickable,
-      compact,
       className,
       ...rest
     } = this.props;
@@ -26,7 +25,6 @@ class Slate extends Component {
         fluid,
         insetted,
         clickable,
-        compact,
       },
       'slate',
       className
@@ -52,7 +50,6 @@ Slate.propTypes = {
   fluid: PropTypes.bool,
   insetted: PropTypes.bool,
   clickable: PropTypes.bool,
-  compact: PropTypes.bool,
 };
 
 export default Slate;
