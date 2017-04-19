@@ -8,7 +8,6 @@ class Segment extends Component {
     let {
       raised,
       loading,
-      compact,
       clearing,
       fluid,
       flatted,
@@ -21,7 +20,6 @@ class Segment extends Component {
       {
         raised,
         loading,
-        compact,
         clearing,
         fluid,
         flatted,
@@ -47,7 +45,6 @@ Segment.displayName = 'Segment';
 Segment.propTypes = {
   raised: PropTypes.bool,
   loading: PropTypes.bool,
-  compact: PropTypes.bool,
   clearing: PropTypes.bool,
   fluid: PropTypes.bool,
   flatted: PropTypes.bool,

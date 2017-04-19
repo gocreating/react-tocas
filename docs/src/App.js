@@ -20,6 +20,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/button"
+        component={require('./pages/elements/ButtonPage').default}
+      />
+      <Route
+        exact
         path="/elements/container"
         component={require('./pages/elements/ContainerPage').default}
       />

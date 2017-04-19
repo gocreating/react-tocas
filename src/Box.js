@@ -14,8 +14,8 @@ const tocasProps = [
   'left', 'center', 'right',
   // alignment
   'floated', 'aligned', 'attached',
-  // disabled
-  'disabled',
+  // active/disabled
+  'active', 'disabled',
   // others
   'icon',
 ];
@@ -33,6 +33,7 @@ class Box extends Component {
       extra,
       padded,
       fitted,
+      compact,
       ...rest
     } = this.props;
     let cx = classNames(
@@ -44,6 +45,7 @@ class Box extends Component {
         extra,
         padded,
         fitted,
+        compact,
       },
       ...tocasProps.map(tocasProp => {
         let cx = {
