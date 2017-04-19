@@ -2,6 +2,9 @@
 
 [Tocas UI 2](https://tocas-ui.com/) components built with react
 
+## Demo & Docs
+
+[react-tocas.github.io](https://react-tocas.github.io/)
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "react-tocas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Tocas UI 2 components built with react",
   "main": "lib/index.js",
   "scripts": {
@@ -45,6 +45,7 @@
     "rimraf": "^2.6.1"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8"
   }
 }
