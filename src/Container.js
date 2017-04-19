@@ -14,13 +14,13 @@ class Container extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'container',
       {
         text,
         very,
         narrow,
         fluid,
       },
+      'container',
       className
     );
 

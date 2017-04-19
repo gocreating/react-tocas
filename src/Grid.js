@@ -16,7 +16,6 @@ class Grid extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'grid',
       column ? `${Sizes[column - 1]} column` : null,
       {
         relaxed,
@@ -24,6 +23,7 @@ class Grid extends Component {
         stackable,
         reversed,
       },
+      'grid',
       className
     );
 

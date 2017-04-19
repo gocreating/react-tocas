@@ -18,7 +18,6 @@ class Segment extends Component {
       ...rest
     } = this.props;
     let cx = classNames(
-      'segment',
       {
         raised,
         loading,
@@ -29,6 +28,7 @@ class Segment extends Component {
         borderless,
         basic,
       },
+      'segment',
       className
     );
 
