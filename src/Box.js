@@ -12,12 +12,15 @@ const tocasProps = [
   // sizes
   'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
   // directions
+  'top', 'bottom',
   'left', 'center', 'right',
   'vertically', 'horizontally',
   // alignment
-  'floated', 'aligned',
+  'floated', 'aligned', 'attached',
   // disabled
   'disabled',
+  // others
+  'icon',
 ];
 
 class Box extends Component {
