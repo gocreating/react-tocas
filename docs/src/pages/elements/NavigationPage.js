@@ -16,6 +16,12 @@ let NavigationPage = () => (
         description: 'Centralize text content especially in high display resolution',
         symbol: <i className="icon resize horizontal" />,
       }, {
+        to: '/elements/header',
+        title: 'Header',
+        meta: '<Header />',
+        description: 'To separate text content',
+        symbol: <i className="icon header" />,
+      }, {
         to: '/elements/segment',
         title: 'Segment',
         meta: '<Segment />, <Segments />',
