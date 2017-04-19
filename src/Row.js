@@ -30,6 +30,8 @@ class Row extends Component {
   }
 }
 
+Row.displayName = 'Row';
+
 Row.propTypes = {
   column: PropTypes.number,
   doubling: PropTypes.bool,

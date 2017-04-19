@@ -22,6 +22,8 @@ class Column extends Component {
   }
 }
 
+Column.displayName = 'Column';
+
 Column.propTypes = {
   wide: PropTypes.number,
 };
