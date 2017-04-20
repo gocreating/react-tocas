@@ -7,6 +7,8 @@ export Container from './Container';
 export Header from './Header';
 export Icon from './Icon';
 export Icons from './Icons';
+export Image from './Image';
+export Images from './Images';
 export Slate from './Slate';
 export Segment from './Segment';
 export Segments from './Segments';

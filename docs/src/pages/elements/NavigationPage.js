@@ -34,6 +34,12 @@ let NavigationPage = () => (
         description: '',
         symbol: <i className="icon smile" />,
       }, {
+        to: '/elements/image',
+        title: 'Image',
+        meta: '<Image />, <Images />',
+        description: '',
+        symbol: <i className="icon picture" />,
+      }, {
         to: '/elements/slate',
         title: 'Slate',
         meta: '<Slate />',
