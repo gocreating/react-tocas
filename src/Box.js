@@ -10,7 +10,7 @@ const tocasProps = [
   // sizes
   'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
   // directions
-  'top', 'bottom',
+  'top', 'middle', 'bottom',
   'left', 'center', 'right',
   // alignment
   'floated', 'aligned', 'attached',
