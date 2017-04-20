@@ -40,6 +40,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/image"
+        component={require('./pages/elements/ImagePage').default}
+      />
+      <Route
+        exact
         path="/elements/slate"
         component={require('./pages/elements/SlatePage').default}
       />
