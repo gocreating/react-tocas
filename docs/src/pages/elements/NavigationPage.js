@@ -28,6 +28,12 @@ let NavigationPage = () => (
         description: 'To separate text content',
         symbol: <i className="icon header" />,
       }, {
+        to: '/elements/icon',
+        title: 'Icon',
+        meta: '<Icon />, <Icons />',
+        description: '',
+        symbol: <i className="icon smile" />,
+      }, {
         to: '/elements/slate',
         title: 'Slate',
         meta: '<Slate />',

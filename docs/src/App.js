@@ -35,6 +35,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/icon"
+        component={require('./pages/elements/IconPage').default}
+      />
+      <Route
+        exact
         path="/elements/slate"
         component={require('./pages/elements/SlatePage').default}
       />
