@@ -2,6 +2,10 @@
 
 [Tocas UI 2](https://tocas-ui.com/) components built with react
 
+[![npm](https://img.shields.io/npm/v/react-tocas.svg?style=flat-square)](https://www.npmjs.com/package/react-tocas)
+
+[![npm](https://img.shields.io/npm/dm/react-tocas.svg?style=flat-square)](https://www.npmjs.com/package/react-tocas)
+
 ## Demo & Docs
 
 [react-tocas.github.io](https://react-tocas.github.io/)
