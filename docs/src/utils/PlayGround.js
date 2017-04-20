@@ -18,7 +18,7 @@ class PlayGround extends Component {
   }
 
   render() {
-    let { title, component, notImplemented } = this.props;
+    let { title, desciption, component, notImplemented } = this.props;
     let { isCodeExpanded } = this.state;
 
     return (
@@ -34,6 +34,9 @@ class PlayGround extends Component {
               Code
             </button>
           )}
+        </div>
+        <div className="ts borderless flatted fitted segment">
+          {desciption}
         </div>
         {notImplemented && (
           <div className="ts slate">
