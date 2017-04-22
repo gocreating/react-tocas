@@ -1,6 +1,9 @@
 import React from 'react';
-import ReactDisqusThread from 'react-disqus-thread';
+import { Helmet } from "react-helmet";
+import ReactDisqus from 'react-disqus';
 import PageLayout from '../utils/PageLayout';
+import GithubButton from '../utils/GithubButton';
+import ShareButtons from '../utils/ShareButtons';
 import {
   Slate,
   Segment,
@@ -13,6 +16,9 @@ import reactLogo from '../../public/react-logo.svg';
 
 let HomePage = () => (
   <PageLayout>
+    <Helmet>
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </Helmet>
     <Segment center aligned borderless flatted>
       <Images related medium>
         <Image src={reactLogo} />
@@ -32,51 +38,32 @@ let HomePage = () => (
         </a>
         {' '}components built with react
       </Header>
-      <a
-        className="github-button"
+      <GithubButton
         href="https://github.com/gocreating/react-tocas"
-        data-style="mega"
-        data-count-href="/gocreating/react-tocas/stargazers"
-        data-count-api="/repos/gocreating/react-tocas#stargazers_count"
-        data-count-aria-label="# stargazers on GitHub"
-        aria-label="Star gocreating/react-tocas on GitHub"
+        countHref="/gocreating/react-tocas/stargazers"
+        countApi="/repos/gocreating/react-tocas#stargazers_count"
+        countAriaLabel="# stargazers on GitHub"
+        ariaLabel="Star gocreating/react-tocas on GitHub"
       >
         Star
-      </a>
+      </GithubButton>
       <br />
-      <a
-        className="github-button"
+      <GithubButton
         href="https://github.com/gocreating"
-        data-style="mega"
-        data-count-href="/gocreating/followers"
-        data-count-api="/users/gocreating#followers"
-        data-count-aria-label="# followers on GitHub"
-        aria-label="Follow @gocreating on GitHub"
+        countHref="/gocreating/followers"
+        countApi="/users/gocreating#followers"
+        countAriaLabel="# followers on GitHub"
+        ariaLabel="Follow @gocreating on GitHub"
       >
         Follow @gocreating
-      </a>
+      </GithubButton>
       <br />
-      <div
-        className="fb-share-button"
-        data-href="https://react-tocas.github.io/"
-        data-layout="button_count"
-        data-size="large"
-        data-mobile-iframe="false"
-      >
-        <a
-          className="fb-xfbml-parse-ignore"
-          target="_blank"
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freact-tocas.github.io%2F&amp;src=sdkpreparse"
-        >
-          分享
-        </a>
-      </div>
+      <ShareButtons
+        url="https://react-tocas.github.io/"
+        title="React-Tocas - Tocas UI 2 components built with react"
+      />
     </Slate>
-    <ReactDisqusThread
-      shortname="react-tocas"
-      identifier="homepage"
-      title="Welcome to React-Tocas"
-    />
+    <ReactDisqus shortname="react-tocas" identifier="homepage" />
   </PageLayout>
 );
 
