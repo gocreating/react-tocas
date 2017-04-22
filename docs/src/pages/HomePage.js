@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDisqus from 'react-disqus';
 import PageLayout from '../utils/PageLayout';
+import ShareButtons from '../utils/ShareButtons';
 import {
   Slate,
   Segment,
@@ -56,21 +57,10 @@ let HomePage = () => (
         Follow @gocreating
       </a>
       <br />
-      <div
-        className="fb-share-button"
-        data-href="https://react-tocas.github.io/"
-        data-layout="button_count"
-        data-size="large"
-        data-mobile-iframe="false"
-      >
-        <a
-          className="fb-xfbml-parse-ignore"
-          target="_blank"
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freact-tocas.github.io%2F&amp;src=sdkpreparse"
-        >
-          分享
-        </a>
-      </div>
+      <ShareButtons
+        url="https://react-tocas.github.io/"
+        title="React-Tocas - Tocas UI 2 components built with react"
+      />
     </Slate>
     <ReactDisqus shortname="react-tocas" identifier="homepage" />
   </PageLayout>
