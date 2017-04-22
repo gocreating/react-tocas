@@ -1,9 +1,3 @@
-.CodeMirror {
-  height: auto;
-}
-.CodeMirror * {
-  font-family: "Consolas", monospace;
-}
 .playground {
   margin-bottom: 3em;
 }

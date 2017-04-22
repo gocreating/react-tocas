@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import jsxToString from 'jsx-to-string';
-import CodeMirror from 'react-codemirror';
+import CodeBlock from './CodeBlock';
 import 'codemirror/mode/jsx/jsx';
-import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/solarized.css';
 import './PlayGround.css';
 
@@ -54,15 +53,14 @@ class PlayGround extends Component {
               {component}
             </div>
             <div className="ts secondary fitted segment">
-              <CodeMirror
-                value={jsxToString(component).replace(/={true}/g, '')}
-                options={{
-                	mode: 'jsx',
-                  readOnly: true,
-                  theme: 'solarized light',
-                  lineNumbers: true,
-                }}
-              />
+              <CodeBlock
+                mode="jsx"
+                theme="solarized light"
+                readOnly
+                lineNumbers
+              >
+                {jsxToString(component).replace(/={true}/g, '').replace(/'/g, '"')}
+              </CodeBlock>
             </div>
           </div>
         )}

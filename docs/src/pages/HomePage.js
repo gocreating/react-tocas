@@ -10,6 +10,7 @@ import {
 } from '../../../lib';
 import tocasOg from '../../public/tocas-og.png';
 import reactLogo from '../../public/react-logo.svg';
+
 let HomePage = () => (
   <PageLayout>
     <Segment center aligned borderless flatted>
