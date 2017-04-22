@@ -15,6 +15,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/getting-started"
+        component={require('./pages/StartPage').default}
+      />
+      <Route
+        exact
         path="/elements"
         component={require('./pages/elements/NavigationPage').default}
       />
