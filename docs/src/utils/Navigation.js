@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 let links = [{
   title: 'React-Tocas',
   to: '/',
+  exact: true,
 }, {
   title: 'Getting started',
   to: '/getting-started',
@@ -27,12 +28,18 @@ let links = [{
 
 let Navigation = () => (
   <div>
-    <div className="ts borderless fluid flatted stackable menu">
+    <div className="ts big inverted warning borderless fluid flatted stackable menu">
       <div className="ts container">
         {links.map(({ title, to, ...rest }) => (
-          <Link key={to} className="item" to={to} {...rest}>
+          <NavLink
+            key={to}
+            className="item"
+            activeClassName="active"
+            to={to}
+            {...rest}
+          >
             {title}
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>
