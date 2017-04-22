@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDisqusThread from 'react-disqus-thread';
+import ReactDisqus from 'react-disqus';
 import PageLayout from '../utils/PageLayout';
 import {
   Slate,
@@ -72,11 +72,7 @@ let HomePage = () => (
         </a>
       </div>
     </Slate>
-    <ReactDisqusThread
-      shortname="react-tocas"
-      identifier="homepage"
-      title="Welcome to React-Tocas"
-    />
+    <ReactDisqus shortname="react-tocas" identifier="homepage" />
   </PageLayout>
 );
 
