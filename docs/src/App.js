@@ -15,6 +15,51 @@ let App = () => (
       />
       <Route
         exact
+        path="/getting-started"
+        component={require('./pages/StartPage').default}
+      />
+      <Route
+        exact
+        path="/elements"
+        component={require('./pages/elements/NavigationPage').default}
+      />
+      <Route
+        exact
+        path="/elements/button"
+        component={require('./pages/elements/ButtonPage').default}
+      />
+      <Route
+        exact
+        path="/elements/container"
+        component={require('./pages/elements/ContainerPage').default}
+      />
+      <Route
+        exact
+        path="/elements/header"
+        component={require('./pages/elements/HeaderPage').default}
+      />
+      <Route
+        exact
+        path="/elements/icon"
+        component={require('./pages/elements/IconPage').default}
+      />
+      <Route
+        exact
+        path="/elements/image"
+        component={require('./pages/elements/ImagePage').default}
+      />
+      <Route
+        exact
+        path="/elements/slate"
+        component={require('./pages/elements/SlatePage').default}
+      />
+      <Route
+        exact
+        path="/elements/segment"
+        component={require('./pages/elements/SegmentPage').default}
+      />
+      <Route
+        exact
         path="/collections"
         component={require('./pages/collections/NavigationPage').default}
       />

@@ -1,10 +1,10 @@
 import React from 'react';
-import PageLayout from '../../utils/PageLayout';
-import CardNavigation from '../../utils/CardNavigation';
+import DemoPageLayout from '../../utils/DemoPageLayout';
+import CardList from '../../utils/CardList';
 
 let NavigationPage = () => (
-  <PageLayout>
-    <CardNavigation
+  <DemoPageLayout title="Collections">
+    <CardList
       title="Collections"
       cards={[{
         to: '/collections/grid',
@@ -14,7 +14,7 @@ let NavigationPage = () => (
         symbol: <i className="icon grid layout" />,
       }]}
     />
-  </PageLayout>
+  </DemoPageLayout>
 );
 
 export default NavigationPage;

@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../utils/PageLayout';
+import DemoPageLayout from '../../utils/DemoPageLayout';
 import PlayGround from '../../utils/PlayGround';
 import {
   Grid,
@@ -9,15 +9,7 @@ import {
 import './GridPage.css';
 
 let GridPage = () => (
-  <PageLayout>
-    <header className="ts fluid horizontally padded heading slate">
-      <div className="ts narrow container">
-        <h1 className="ts left aligned header">
-          Grid
-        </h1>
-      </div>
-    </header>
-
+  <DemoPageLayout title="Grid">
     <h1 className="ts dividing header">Tutorial</h1>
     <PlayGround
       title="Basic"
@@ -269,7 +261,7 @@ let GridPage = () => (
       title="Manually Hide"
       notImplemented
     />
-  </PageLayout>
+  </DemoPageLayout>
 );
 
 export default GridPage;

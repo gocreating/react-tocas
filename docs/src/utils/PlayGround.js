@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import jsxToString from 'jsx-to-string';
-import CodeMirror from 'react-codemirror';
+import CodeBlock from './CodeBlock';
 import 'codemirror/mode/jsx/jsx';
-import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/solarized.css';
 import './PlayGround.css';
 
@@ -18,22 +17,25 @@ class PlayGround extends Component {
   }
 
   render() {
-    let { title, component, notImplemented } = this.props;
+    let { title, desciption, component, notImplemented } = this.props;
     let { isCodeExpanded } = this.state;
 
     return (
       <div className="playground">
-        <div className="ts borderless flatted fitted clearing segment">
+        <div className="ts borderless flatted horizontally fitted clearing segment">
           <h3 className="ts left floated header">{title}</h3>
           {!notImplemented && (
             <button
-              className="ts small right floated labeled icon button"
+              className="ts mini right floated labeled icon button"
               onClick={this.onBtnCodeClick}
             >
               <i className="code icon"></i>
-              程式碼
+              Code
             </button>
           )}
+        </div>
+        <div className="ts borderless flatted fitted segment">
+          {desciption}
         </div>
         {notImplemented && (
           <div className="ts slate">
@@ -41,25 +43,24 @@ class PlayGround extends Component {
           </div>
         )}
         {!notImplemented && !isCodeExpanded && (
-          <div className="ts segment fitted preview">
+          <div className="ts borderless flatted clearing segment fitted preview">
             {component}
           </div>
         )}
         {!notImplemented && isCodeExpanded && (
           <div className="ts segments">
-            <div className="ts segment preview">
+            <div className="ts clearing segment preview">
               {component}
             </div>
             <div className="ts secondary fitted segment">
-              <CodeMirror
-                value={jsxToString(component).replace(/={true}/g, '')}
-                options={{
-                	mode: 'jsx',
-                  readOnly: true,
-                  theme: 'solarized light',
-                  lineNumbers: true,
-                }}
-              />
+              <CodeBlock
+                mode="jsx"
+                theme="solarized light"
+                readOnly
+                lineNumbers
+              >
+                {jsxToString(component).replace(/={true}/g, '').replace(/'/g, '"')}
+              </CodeBlock>
             </div>
           </div>
         )}

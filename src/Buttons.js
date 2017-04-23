@@ -2,28 +2,27 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
-import Sizes from './Sizes';
 
-class Grid extends Component {
+class Buttons extends Component {
   render() {
     let {
-      column,
+      fluid,
+      vertical,
+      separated,
       relaxed,
-      centered,
       stackable,
-      reversed,
       className,
       ...rest
     } = this.props;
     let cx = classNames(
-      column ? `${Sizes[column - 1]} column` : null,
       {
+        fluid,
+        vertical,
+        separated,
         relaxed,
-        centered,
         stackable,
-        reversed,
       },
-      'grid',
+      'buttons',
       className
     );
 
@@ -37,14 +36,14 @@ class Grid extends Component {
   }
 }
 
-Grid.displayName = 'Grid';
+Buttons.displayName = 'Buttons';
 
-Grid.propTypes = {
-  column: PropTypes.number,
+Buttons.propTypes = {
+  fluid: PropTypes.bool,
+  vertical: PropTypes.bool,
+  separated: PropTypes.bool,
   relaxed: PropTypes.bool,
-  centered: PropTypes.bool,
   stackable: PropTypes.bool,
-  reversed: PropTypes.bool,
 };
 
-export default Grid;
+export default Buttons;

@@ -8,8 +8,8 @@ class Column extends Component {
   render() {
     let { wide, className, ...rest } = this.props;
     let cx = classNames(
-      'column',
       wide ? `${Sizes[wide - 1]} wide` : null,
+      'column',
       className,
     );
 

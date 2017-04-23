@@ -1,0 +1,9 @@
+.CodeMirror {
+  height: auto;
+}
+.CodeMirror .CodeMirror-line  {
+  padding: 0 20px;
+}
+.CodeMirror * {
+  font-family: "Consolas", monospace;
+}

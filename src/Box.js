@@ -3,16 +3,21 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const tocasProps = [
-  // main
-  'ts',
-  // colors
+  // semantics
   'primary', 'info', 'warning', 'positive', 'negative', 'inverted',
+  // annoucements
+  'secondary', 'tertiary',
   // sizes
   'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
   // directions
-  'left', 'right',
+  'top', 'middle', 'bottom',
+  'left', 'center', 'right',
   // alignment
-  'floated', 'aligned',
+  'floated', 'aligned', 'attached',
+  // active/disabled
+  'active', 'disabled',
+  // others
+  'icon',
 ];
 
 class Box extends Component {
@@ -21,17 +26,36 @@ class Box extends Component {
       wrapper,
       className,
       children,
+      ts,
+      vertically,
+      horizontally,
+      very,
+      extra,
+      padded,
+      fitted,
+      compact,
       ...rest
     } = this.props;
     let cx = classNames(
-      className,
+      {
+        ts,
+        vertically,
+        horizontally,
+        very,
+        extra,
+        padded,
+        fitted,
+        compact,
+      },
       ...tocasProps.map(tocasProp => {
+        let cx = {
+          [tocasProp]: rest[tocasProp],
+        };
         delete rest[tocasProp];
 
-        return {
-          [tocasProp]: this.props[tocasProp],
-        };
-      })
+        return cx;
+      }),
+      className
     );
 
     return React.createElement(
