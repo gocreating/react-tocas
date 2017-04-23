@@ -46,6 +46,12 @@ let NavigationPage = () => (
         description: 'Multi-functional block like header container, placeholder or uploading area',
         symbol: <i className="icon square" />,
       }, {
+        to: '/elements/list',
+        title: 'List',
+        meta: '<List />, <Item />, <Content />, <Header />, <Description />',
+        description: '',
+        symbol: <i className="icon list" />,
+      }, {
         to: '/elements/segment',
         title: 'Segment',
         meta: '<Segment />, <Segments />',

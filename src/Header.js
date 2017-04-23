@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
+import InComponents from './InComponents';
 
 class Header extends Component {
   render() {
+    let {
+      inComponent,
+    } = this.context;
     let {
       level,
       sub,
@@ -26,14 +30,19 @@ class Header extends Component {
       'header',
       className
     );
+    let isUsingTs = true;
 
     if (level) {
       rest.wrapper = `h${level}`;
     }
 
+    if (inComponent === InComponents.ITEM) {
+      isUsingTs = false;
+    }
+
     return (
       <Box
-        ts
+        ts={isUsingTs}
         className={cx}
         {...rest}
       />
@@ -50,6 +59,10 @@ Header.propTypes = {
   block: PropTypes.bool,
   thinner: PropTypes.bool,
   bolder: PropTypes.bool,
+};
+
+Header.contextTypes = {
+  inComponent: PropTypes.oneOf(Object.keys(InComponents)),
 };
 
 export default Header;
