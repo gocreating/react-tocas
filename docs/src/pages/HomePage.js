@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-import ReactDisqus from 'react-disqus';
 import PageLayout from '../utils/PageLayout';
 import GithubButton from '../utils/GithubButton';
 import ShareButtons from '../utils/ShareButtons';
+import Disqus from '../utils/Disqus';
 import {
   Slate,
   Segment,
@@ -63,7 +63,10 @@ let HomePage = () => (
         title="React-Tocas - Tocas UI 2 components built with react"
       />
     </Slate>
-    <ReactDisqus shortname="react-tocas" identifier="homepage" />
+    <Disqus
+      shortname="react-tocas"
+      identifier="homepage"
+    />
   </PageLayout>
 );
 

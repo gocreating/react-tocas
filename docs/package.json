@@ -6,7 +6,6 @@
     "jsx-to-string": "^1.1.0",
     "react": "^15.5.4",
     "react-codemirror": "^0.3.0",
-    "react-disqus": "^1.0.2",
     "react-dom": "^15.5.4",
     "react-helmet": "^5.0.3",
     "react-router-dom": "^4.1.1",
