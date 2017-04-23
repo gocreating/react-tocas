@@ -55,6 +55,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/list"
+        component={require('./pages/elements/ListPage').default}
+      />
+      <Route
+        exact
         path="/elements/segment"
         component={require('./pages/elements/SegmentPage').default}
       />
