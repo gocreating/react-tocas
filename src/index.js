@@ -12,6 +12,7 @@ export Images from './Images';
 export Slate from './Slate';
 export List from './List';
 export Item from './Item';
+export Content from './Content';
 export Segment from './Segment';
 export Segments from './Segments';
 
