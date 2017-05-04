@@ -50,6 +50,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/input"
+        component={require('./pages/elements/InputPage').default}
+      />
+      <Route
+        exact
         path="/elements/slate"
         component={require('./pages/elements/SlatePage').default}
       />
