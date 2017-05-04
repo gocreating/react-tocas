@@ -3,28 +3,24 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
 
-class Icon extends Component {
+class Label extends Component {
   render() {
     let {
-      name,
-      link,
-      circular,
+      basic,
       className,
       ...rest
     } = this.props;
     let cx = classNames(
-      name,
       {
-        link,
-        circular,
+        basic,
       },
-      'icon',
+      'label',
       className
     );
 
     return (
       <Box
-        wrapper="i"
+        ts
         className={cx}
         {...rest}
       />
@@ -32,12 +28,10 @@ class Icon extends Component {
   }
 }
 
-Icon.displayName = 'Icon';
+Label.displayName = 'Label';
 
-Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-  link: PropTypes.bool,
-  circular: PropTypes.bool,
+Label.propTypes = {
+  basic: PropTypes.bool,
 };
 
-export default Icon;
+export default Label;

@@ -40,6 +40,12 @@ let NavigationPage = () => (
         description: '',
         symbol: <i className="icon picture" />,
       }, {
+        to: '/elements/input',
+        title: 'Input',
+        meta: '<Input />, <Inputs />',
+        description: '',
+        symbol: <i className="icon text cursor" />,
+      }, {
         to: '/elements/slate',
         title: 'Slate',
         meta: '<Slate />',
