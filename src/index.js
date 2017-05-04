@@ -12,6 +12,7 @@ export Images from './Images';
 export Input from './Input';
 export Inputs from './Inputs';
 export Slate from './Slate';
+export Label from './Label';
 export List from './List';
 export Item from './Item';
 export Content from './Content';
