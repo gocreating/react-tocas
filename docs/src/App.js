@@ -85,6 +85,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/collections/menu"
+        component={require('./pages/collections/MenuPage').default}
+      />
+      <Route
+        exact
         path="/views"
         component={require('./pages/views/NavigationPage').default}
       />
