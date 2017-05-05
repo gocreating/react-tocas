@@ -14,6 +14,10 @@ class Item extends Component {
   render() {
     let {
       active,
+      header,
+      unread,
+      divider,
+      fitted,
       link,
       wrapper,
       className,
@@ -22,6 +26,10 @@ class Item extends Component {
     let cx = classNames(
       {
         active,
+        header,
+        unread,
+        divider,
+        fitted,
       },
       'item',
       className
@@ -41,6 +49,10 @@ Item.displayName = 'Item';
 
 Item.propTypes = {
   active: PropTypes.bool,
+  header: PropTypes.bool,
+  unread: PropTypes.bool,
+  divider: PropTypes.bool,
+  fitted: PropTypes.bool,
   link: PropTypes.bool,
 };
 
