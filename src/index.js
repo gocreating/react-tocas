@@ -13,6 +13,7 @@ export Input from './Input';
 export Inputs from './Inputs';
 export Slate from './Slate';
 export Label from './Label';
+export Detail from './Detail';
 export List from './List';
 export Item from './Item';
 export Content from './Content';

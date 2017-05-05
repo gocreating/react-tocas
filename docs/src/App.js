@@ -60,6 +60,11 @@ let App = () => (
       />
       <Route
         exact
+        path="/elements/label"
+        component={require('./pages/elements/LabelPage').default}
+      />
+      <Route
+        exact
         path="/elements/list"
         component={require('./pages/elements/ListPage').default}
       />
