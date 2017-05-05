@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
+import InComponents from './InComponents';
+import AppearanceSizes from './AppearanceSizes';
 
 class Image extends Component {
   render() {
+    let {
+      inComponent,
+    } = this.context;
     let {
       link,
       hidden,
@@ -33,11 +38,22 @@ class Image extends Component {
       'image',
       className
     );
+    let wrapper = 'img';
+    let isUsingTs = true;
+
+    if (inComponent === InComponents.ITEM) {
+      let isSizeInProps = AppearanceSizes.some(appearanceSize => (
+        Object.keys(rest).indexOf(appearanceSize) > -1
+      ));
+
+      wrapper = 'div';
+      isUsingTs = false || isSizeInProps;
+    }
 
     return (
       <Box
-        wrapper="img"
-        ts
+        wrapper={wrapper}
+        ts={isUsingTs}
         className={cx}
         {...rest}
       />
@@ -57,6 +73,10 @@ Image.propTypes = {
   circular: PropTypes.bool,
   centered: PropTypes.bool,
   spaced: PropTypes.bool,
+};
+
+Image.contextTypes = {
+  inComponent: PropTypes.oneOf(Object.keys(InComponents)),
 };
 
 export default Image;

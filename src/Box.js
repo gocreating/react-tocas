@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import AppearanceSizes from './AppearanceSizes';
 
 const tocasProps = [
   // semantics
   'primary', 'info', 'warning', 'positive', 'negative', 'inverted',
   // annoucements
   'secondary', 'tertiary',
-  // sizes
-  'mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive',
+  // appearance sizes
+  ...AppearanceSizes,
   // directions
   'top', 'middle', 'bottom',
   'left', 'center', 'right',
