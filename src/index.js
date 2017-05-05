@@ -25,3 +25,8 @@ export Segments from './Segments';
 export Grid from './Grid';
 export Row from './Row';
 export Column from './Column';
+
+// views
+export Items from './Items';
+export Meta from './Meta';
+export Extra from './Extra';
