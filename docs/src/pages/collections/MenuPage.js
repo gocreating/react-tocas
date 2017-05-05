@@ -318,6 +318,242 @@ let MenuPage = () => (
       title="Dropdown Menu"
       notImplemented
     />
+
+    <h1 className="ts dividing header">Appearance</h1>
+    <PlayGround
+      title="Icon"
+      component={(
+        <div>
+          <Menu icon>
+            <Item link><Icon name="search" /></Item>
+            <Item link><Icon name="download" /></Item>
+            <Item link><Icon name="upload" /></Item>
+          </Menu>
+          <Menu vertical icon>
+            <Item link><Icon name="search" /></Item>
+            <Item link><Icon name="download" /></Item>
+            <Item link><Icon name="upload" /></Item>
+          </Menu>
+        </div>
+      )}
+    />
+    <PlayGround
+      title="Labeled Icon"
+      component={(
+        <div>
+          <Menu labeled icon>
+            <Item link>
+              <Icon name="search" />
+              搜尋
+            </Item>
+            <Item active link>
+              <Icon name="mail" />
+              電子郵件
+            </Item>
+            <Item disabled link>
+              <Icon name="user" />
+              使用者
+            </Item>
+            <Item link>
+              <Icon name="remove" />
+              移除鈕
+            </Item>
+          </Menu>
+          <Menu vertical labeled icon>
+            <Item link>
+              <Icon name="search" />
+              搜尋
+            </Item>
+            <Item active link>
+              <Icon name="mail" />
+              電子郵件
+            </Item>
+            <Item disabled link>
+              <Icon name="user" />
+              使用者
+            </Item>
+          </Menu>
+        </div>
+      )}
+    />
+    <PlayGround
+      title="Fluid"
+      component={(
+        <Menu vertical fluid>
+          <Item link>亞凡芽</Item>
+          <Item link>卡莉絲</Item>
+          <Item link>夏希</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Compact"
+      component={(
+        <Menu compact>
+          <Item link>
+            <Icon name="gamepad" />
+            遊戲
+          </Item>
+          <Item link>
+            <Icon name="video camera" />
+            頻道
+          </Item>
+          <Item link>
+            <Icon name="video play" />
+            影片
+          </Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Evenly Divided"
+      component={(
+        <Menu evenly divided>
+          <Item link>
+            <Icon name="gamepad" />
+            遊戲
+          </Item>
+          <Item link>
+            <Icon name="video camera" />
+            頻道
+          </Item>
+          <Item link>
+            <Icon name="video play" />
+            影片
+          </Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Borderless"
+      component={(
+        <Menu borderless>
+          <Item link>亞凡芽</Item>
+          <Item link>卡莉絲</Item>
+          <Item link>夏希</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Fitted"
+      component={(
+        <Menu>
+          <Item link horizontally fitted> 水平縮減 </Item>
+          <Item link vertically fitted> 垂直縮減 </Item>
+          <Item link> 一般選項 </Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Raised"
+      component={(
+        <Menu raised>
+          <Item link>檔案</Item>
+          <Item link>編輯</Item>
+          <Item link>尋找</Item>
+          <Item link>檢視</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Flatted"
+      component={(
+        <Menu flatted>
+          <Item link>執行</Item>
+          <Item link>工具</Item>
+          <Item link>視窗</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Horizontal Alignment"
+      component={(
+        <Menu vertical>
+          <Item link left aligned>置左對齊</Item>
+          <Item link center aligned>置中對齊</Item>
+          <Item link right aligned>置右對齊</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Stackable"
+      component={(
+        <Menu stackable>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Horizontally Scrollable"
+      component={(
+        <Menu horizontally scrollable>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+          <Item link>項目</Item>
+        </Menu>
+      )}
+    />
+    <PlayGround
+      title="Size"
+      component={(
+        <div>
+          <Menu mini>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu tiny>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu small>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu medium>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu large>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu big>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu huge>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+          <Menu massive>
+            <Item link>執行</Item>
+            <Item link>工具</Item>
+            <Item link>視窗</Item>
+          </Menu>
+        </div>
+      )}
+    />
   </DemoPageLayout>
 );
 
