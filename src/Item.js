@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
-import InComponents from './InComponents';
 
 class Item extends Component {
   getChildContext() {
     return {
-      inComponent: InComponents.ITEM,
+      isInItem: true,
     };
   }
 
@@ -57,7 +56,7 @@ Item.propTypes = {
 };
 
 Item.childContextTypes = {
-  inComponent: PropTypes.oneOf(Object.keys(InComponents)),
+  isInItem: PropTypes.bool,
 };
 
 export default Item;

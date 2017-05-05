@@ -4,6 +4,12 @@ import classNames from 'classnames';
 import Box from './Box';
 
 class Items extends Component {
+  getChildContext() {
+    return {
+      isInItems: true,
+    };
+  }
+
   render() {
     let {
       divided,
@@ -41,6 +47,10 @@ Items.propTypes = {
   very: PropTypes.bool,
   relaxed: PropTypes.bool,
   link: PropTypes.bool,
+};
+
+Items.childContextTypes = {
+  isInItems: PropTypes.bool,
 };
 
 export default Items;

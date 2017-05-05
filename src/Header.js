@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
-import InComponents from './InComponents';
 
 class Header extends Component {
   render() {
     let {
-      inComponent,
+      isInItem,
     } = this.context;
     let {
       level,
@@ -36,7 +35,7 @@ class Header extends Component {
       rest.wrapper = `h${level}`;
     }
 
-    if (inComponent === InComponents.ITEM) {
+    if (isInItem) {
       isUsingTs = false;
     }
 
@@ -62,7 +61,7 @@ Header.propTypes = {
 };
 
 Header.contextTypes = {
-  inComponent: PropTypes.oneOf(Object.keys(InComponents)),
+  isInItem: PropTypes.bool,
 };
 
 export default Header;

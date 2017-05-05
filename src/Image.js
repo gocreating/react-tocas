@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Box from './Box';
-import InComponents from './InComponents';
 import AppearanceSizes from './AppearanceSizes';
 
 class Image extends Component {
   render() {
     let {
-      inComponent,
+      isInItems,
+      isInItem,
     } = this.context;
     let {
       link,
@@ -41,13 +41,12 @@ class Image extends Component {
     let wrapper = 'img';
     let isUsingTs = true;
 
-    if (inComponent === InComponents.ITEM) {
+    if (isInItems && isInItem) {
       let isSizeInProps = AppearanceSizes.some(appearanceSize => (
         Object.keys(rest).indexOf(appearanceSize) > -1
       ));
-
       wrapper = 'div';
-      isUsingTs = false || isSizeInProps;
+      isUsingTs = isSizeInProps;
     }
 
     return (
@@ -76,7 +75,8 @@ Image.propTypes = {
 };
 
 Image.contextTypes = {
-  inComponent: PropTypes.oneOf(Object.keys(InComponents)),
+  isInItems: PropTypes.bool,
+  isInItem: PropTypes.bool,
 };
 
 export default Image;
