@@ -18,6 +18,14 @@ let NavigationPage = () => (
         meta: '<Menu />, <Item />',
         description: '',
         symbol: <i className="icon ellipsis horizontal" />,
+      }, {
+        to: '/collections/table',
+        title: 'Table',
+        meta: (
+          '<Table />, <THead />, <TBody />, <TFoot />, <Tr />, <Th />, <Td />'
+        ),
+        description: '',
+        symbol: <i className="icon table" />,
       }]}
     />
   </DemoPageLayout>

@@ -25,6 +25,14 @@ export Grid from './Grid';
 export Row from './Row';
 export Column from './Column';
 export Menu from './Menu';
+export Table from './Table';
+export TableCell from './TableCell';
+export THead from './THead';
+export TBody from './TBody';
+export TFoot from './TFoot';
+export Tr from './Tr';
+export Th from './Th';
+export Td from './Td';
 
 // views
 export Item from './Item';
