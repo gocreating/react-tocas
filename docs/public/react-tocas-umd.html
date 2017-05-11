@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React-Tocas</title>
+    <link rel="stylesheet" href="//cdn.rawgit.com/TeaMeow/TocasUI/master/dist/tocas.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="/dist/react-tocas.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var Button = Rts.Button;
+      var Menu = Rts.Menu;
+      var Item = Rts.Item;
+
+      ReactDOM.render((
+        <div>
+          <Menu>
+            <Item>Hello</Item>
+            <Item>World</Item>
+          </Menu>
+          <Button primary onClick={function() { alert('hello') }}>
+            Hello World
+          </Button>
+        </div>
+      ), document.getElementById('root'));
+    </script>
+  </body>
+</html>
