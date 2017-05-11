@@ -7,7 +7,8 @@
     "lint": "./node_modules/.bin/eslint --config=./.eslintrc.json ./src",
     "test": "npm run lint",
     "build": "gulp clean && gulp build",
-    "prepublish": "npm run build"
+    "build:umd": "gulp clean:umd && webpack --config ./webpack.config.js && cp -r ./dist ./docs/public",
+    "prepublish": "npm run build && npm run build:umd"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
   "homepage": "https://github.com/gocreating/react-tocas#readme",
   "devDependencies": {
     "babel-eslint": "^7.2.2",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
@@ -42,7 +45,8 @@
     "gulp-notify": "^3.0.0",
     "gulp-sourcemaps": "^2.6.0",
     "react": "^15.5.4",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^2.5.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",

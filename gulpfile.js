@@ -18,6 +18,12 @@ gulp.task('clean', function(done) {
   done();
 });
 
+gulp.task('clean:umd', function(done) {
+  rimraf.sync('./dist');
+  rimraf.sync('./docs/public/dist');
+  done();
+});
+
 // build source files
 gulp.task('build', function() {
   return gulp
